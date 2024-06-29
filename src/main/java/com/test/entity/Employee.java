@@ -21,4 +21,18 @@ public class Employee {
     private Double salary;
     private String doj;
 
+    private String gender;
+    private String client;
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", salary=" + salary +
+                ", doj='" + doj + '\'' +
+                ", gender='" + gender + '\'' +
+                ", client='" + client + '\'' +
+                '}';
+    }
 }

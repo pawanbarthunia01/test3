@@ -1,6 +1,6 @@
 FROM openjdk:17
 ADD target/test_01.jar /test_01.jar
-ENV PORT 8081
+ENV PORT 9003
 EXPOSE $PORT
 ENTRYPOINT ["java","-jar","-Xmx1024M","-Dserver.port=${PORT}","test_01.jar"]
 
